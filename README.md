@@ -1,44 +1,60 @@
-# pv-interview-mobile
-***Question 1 Tip Calculator with Analytics***
+# Pivotus Mobile Exercises
 
-Accroding to the design provided, create a Tip Calculator that allows the user to 
-- enter a *bill amount*
-- select a *tip percentage*
-- calculate the *total amount*
+## General Instructions
+Please submit your work for one (or both!) of the exercises below.
 
-Implement Amplitude's Analytics API https://amplitude.com/ in your app to 
-- view the average taps (excluding keyboard) the users used to calculate the *total amount*
-- view the average tip percentages based on location.
+### Exercise 1 Tip Calculator App with Analytics
 
-**Requirements:**
-- iOS app must be implemented in Objective-C or Swift without using other mobile frameworks.
-- Must be your original work.  If a portion of the code is borrowed from google or stack-overflow, please site the source.
+#### Features
 
-**Deliverablies:**
-- A github repo with the written code.
-- A screen capture of the working app.
-- Amount of time spent in the project.
+Create a Tip Calculator with the following features:
+- Enter a **bill amount**
+- Display a set of **tip percentage** options
+- Allow user to select 1 **tip percentage**
+- Calculate the **total amount**
 
+Integrate Amplitude's [Analytics API](https://amplitude.com/) in your app. Capture these analytics such that the following can be viewed:
+- The average taps (excluding keyboard) the users used to calculate the **total amount**
+- The average tip percentages based on location
 
-***Question 2 Video Call App***
+#### Requirements
+- iOS app must be implemented in Objective-C or Swift without using other mobile frameworks
+- Must be your original work. If a portion of the code is used from google or stack-overflow, please site the source
 
-According to the design provided, create a Video Call app using Tokbox's iOS SDK https://tokbox.com/developer/sdks/ios/ to 
+#### Deliverables
+
+A PR with the following:
+- Your source code
+- A README with an explanation of how you designed the application, any challenges you faced, and any other notes you feel will be helpful for us to understand your work 
+- A video screen capture of the working app
+
+### Exercise 2 Video Call App
+
+#### Features
+
+Create an audio/video calling app using [Tokbox's iOS SDK](https://tokbox.com/developer/sdks/ios/) implementing the following features:
 - Initiate a new video call
-- End a call when a video call is in progress.
+- End a call when a video call is in progress
 
-Hint: 
-- you may use Tokbox's built-in web client to test your video call.
-- you may use the Tokbox's sample app as your basis
+***Hints***
 
-Short Answer Questions
-1.  Please describe the tools and technology one would employ to deliver the Video Call app to the stake-holders such as the PM team or the QA team.
-2.  Please describe the entire submission process for the Video Call app to go from development to the official Apple Store.  Please include all steps one would encounter when interacting with Apple.
+- You may use the Tokbox's sample app as your basis
+- You may use Tokbox's built-in web client to test your video call
 
-**Requirements:**
-- iOS app must be implemented in Objective-C or Swift without using other mobile frameworks.
-- Must be your original work.  If a portion of the code is borrowed from google or stack-overflow, please site the source.
+#### Short Answer Questions
 
-**Deliverablies:**
-- A github repo with the written code and written text answers.
-- A screen capture of the working app.
-- Amount of time spent in the project.
+1. Describe the tools and technology you would use to deliver the Video Call App to stakeholders such as the PM team or the QA team
+2. Describe the entire submission process for the Video Call App going from source code to the official Apple Store. Please include all steps one would encounter when interacting with Apple
+
+#### Requirements
+
+- iOS app must be implemented in Objective-C or Swift without using other mobile frameworks
+- Must be your original work. If a portion of the code is used from google or stack-overflow, please site the source
+
+#### Deliverables
+
+A PR with the following:
+- Your source code
+- A README with an explanation of how you designed the application, any challenges you faced, the answers to the short questions listed above and any other notes you feel will be helpful for us to understand your work
+- A video screen capture of the working app
+
