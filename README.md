@@ -15,7 +15,7 @@ Create a Tip Calculator with the following features:
 
 Integrate Amplitude's [Analytics API](https://amplitude.com/) in your app. Capture these analytics such that the following can be viewed:
 - The average taps (excluding keyboard) the users used to calculate the **total amount**
-- The average tip percentages based on location
+- The **average tip percentages** based on location
 
 ### Requirements
 - iOS app must be implemented in Objective-C or Swift without using other mobile frameworks
