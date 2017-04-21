@@ -3,7 +3,7 @@
 ## Summary
 Create a master-detail application that shows the top movies currently playing in US movie theaters.  The application needs to display a table of top movies with descriptions for each movie (title, release date, genre, image).  When a user clicks a movie row, the application will navigate to a details page showing additional details on the selected movie.
 
-![Movie App](https://octodex.github.com/images/yaktocat.png)
+![Movie App](https://github.com/PivotusVentures/pv-interview-mobile/raw/master/exercise.png)
 
 ## Pre-requisites
 Create an account with The Movie DB (https://www.themoviedb.org) and request a free developer API key to gain access the REST API for movies.  The account and registration is free and happens instantly.  
