@@ -1,60 +1,38 @@
-# Pivotus Mobile Exercises
+# iOS Developer Exercise
 
-## General Instructions
-Please submit your work for one (or both!) of the exercises below.
+## Summary
+Create a master-detail application that shows the top movies currently playing in US movie theaters.  The application needs to display a table of top movies with descriptions for each movie (title, release date, genre, image).  When a user clicks a movie row, the application will navigate to a details page showing additional details on the selected movie.
 
-## Exercise 1 Tip Calculator App with Analytics
+![Movie App](https://github.com/PivotusVentures/pv-interview-mobile/raw/master/exercise.png)
 
-### Features
+## Pre-requisites
+Create an account with The Movie DB (https://www.themoviedb.org) and request a free developer API key to gain access the REST API for movies.  The account and registration is free and happens instantly.  
 
-Create a Tip Calculator with the following features:
-- Enter a **bill amount**
-- Display a set of **tip percentage** options
-- Allow user to select 1 **tip percentage**
-- Calculate the **total amount**
+## API Calls
+Documentation: https://developers.themoviedb.org/3/getting-started
+Once you receive your key, you can make requests using the following base url. You will need to replace the api_key with your issued key.
 
-Integrate Amplitude's [Analytics API](https://amplitude.com/) in your app. Capture these analytics such that the following can be viewed:
-- The average taps (excluding keyboard) the users used to calculate the **total amount**
-- The **average tip percentages** based on location
+https://api.themoviedb.org/3/movie/76341?api_key={api_key}
 
-### Requirements
-- iOS app must be implemented in Objective-C or Swift without using other mobile frameworks
-- Must be your original work. If a portion of the code is used from google or stack-overflow, please site the source
+| Method        | EndPoint          |
+| ------------- | -------------     |
+| GET           | /movie/top_rated  |
+| GET           | /movie/{movie_id} |
 
-### Deliverables
 
-A PR with the following:
-- Your source code
-- A README with an explanation of how you designed the application, any challenges you faced, and any other notes you feel will be helpful for us to understand your work 
-- A video screen capture of the working app
+## Minimum Requirements
+The mobile application needs to support iOS 10 running in a simulator.  The following are additional requirements and limitations for the developer:
+-	Must use a UITableViewController for the list of movies
+-	Must use a UINavigationController 
+-	Must use Storyboards for the UI
+-	Must use Apple classes for Networking (ie URLSession, URLRequest, etc) 
+-	Application should have smooth scrolling and support Asynchronous image loading
 
-## Exercise 2 Video Call App
+You are free to be creative with the UI provided the above requirements hold true.  We are testing your knowledge of the basics and not your ability to find open source frameworks to solve the problem.
 
-### Features
+## Bonus
+You should be able to complete this project in under 2 hours.  That said, if you would like to go above and beyond the minimum, you are free to add to base app any additional features you can think of.  Some examples include creating a filter by genre of the top movies playing, adding a movie search, and/or providing links to artist bio and displaying movies images on the detail view.
 
-Create an audio/video calling app using [Tokbox's iOS SDK](https://tokbox.com/developer/sdks/ios/) implementing the following features:
-- Initiate a new video call
-- End a call when a video call is in progress
-
-***Hints***
-
-- You may use the Tokbox's sample app as your basis
-- You may use Tokbox's built-in web client to test your video call
-
-### Short Answer Questions
-
-1. Describe the tools and technology you would use to deliver the Video Call App to stakeholders such as the PM team or the QA team
-2. Describe the entire submission process for the Video Call App going from source code to the official Apple Store. Please include all steps one would encounter when interacting with Apple
-
-### Requirements
-
-- iOS app must be implemented in Objective-C or Swift without using other mobile frameworks
-- Must be your original work. If a portion of the code is used from google or stack-overflow, please site the source
-
-### Deliverables
-
-A PR with the following:
-- Your source code
-- A README with an explanation of how you designed the application, any challenges you faced, the answers to the short questions listed above and any other notes you feel will be helpful for us to understand your work
-- A video screen capture of the working app
-
+## Deliverables
+- Clone the repo into your account and share the url to the repo
+- Finally, quality code is important to us.  We will be evaluating your project and will expect you to demonstrate how you tested your app and what considerations should be included in a professional level app.
