@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		297BB0131F05754D00289F91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0121F05754D00289F91 /* AppDelegate.swift */; };
+		297BB0151F05754D00289F91 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0141F05754D00289F91 /* MasterViewController.swift */; };
+		297BB0171F05754D00289F91 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0161F05754D00289F91 /* DetailViewController.swift */; };
+		297BB01A1F05754D00289F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297BB0181F05754D00289F91 /* Main.storyboard */; };
+		297BB01C1F05754D00289F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297BB01B1F05754D00289F91 /* Assets.xcassets */; };
+		297BB01F1F05754D00289F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297BB01D1F05754D00289F91 /* LaunchScreen.storyboard */; };
+		297BB0351F05754E00289F91 /* pv_interview_mobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0341F05754E00289F91 /* pv_interview_mobileUITests.swift */; };
+		297BB0441F0575B600289F91 /* MovieModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0421F0575B600289F91 /* MovieModelTests.swift */; };
+		297BB0461F0576BD00289F91 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0451F0576BD00289F91 /* MovieModel.swift */; };
+		297BB04B1F0583F300289F91 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0471F0581E600289F91 /* NetworkTest.swift */; };
+		298FADA01F05A03900686AEF /* MovieModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FAD9F1F05A03900686AEF /* MovieModelTest.swift */; };
+		29E1A1391F05C17A0056006E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E1A1381F05C17A0056006E /* Constants.swift */; };
+		29E1A13B1F05F5B10056006E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E1A13A1F05F5B10056006E /* Api.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		297BB0261F05754E00289F91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 297BB0071F05754D00289F91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 297BB00E1F05754D00289F91;
+			remoteInfo = "pv-interview-mobile";
+		};
+		297BB0311F05754E00289F91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 297BB0071F05754D00289F91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 297BB00E1F05754D00289F91;
+			remoteInfo = "pv-interview-mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		297BB00F1F05754D00289F91 /* pv-interview-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pv-interview-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		297BB0121F05754D00289F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		297BB0141F05754D00289F91 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		297BB0161F05754D00289F91 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		297BB0191F05754D00289F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		297BB01B1F05754D00289F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		297BB01E1F05754D00289F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		297BB0201F05754D00289F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		297BB0251F05754D00289F91 /* pv-interview-mobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pv-interview-mobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		297BB02B1F05754E00289F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		297BB0301F05754E00289F91 /* pv-interview-mobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pv-interview-mobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		297BB0341F05754E00289F91 /* pv_interview_mobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pv_interview_mobileUITests.swift; sourceTree = "<group>"; };
+		297BB0361F05754E00289F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		297BB0421F0575B600289F91 /* MovieModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModelTests.swift; sourceTree = "<group>"; };
+		297BB0451F0576BD00289F91 /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		297BB0471F0581E600289F91 /* NetworkTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
+		298FAD9F1F05A03900686AEF /* MovieModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModelTest.swift; sourceTree = "<group>"; };
+		29E1A1381F05C17A0056006E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		29E1A13A1F05F5B10056006E /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		297BB00C1F05754D00289F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297BB0221F05754D00289F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297BB02D1F05754E00289F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		297BB0061F05754D00289F91 = {
+			isa = PBXGroup;
+			children = (
+				297BB0111F05754D00289F91 /* pv-interview-mobile */,
+				297BB0281F05754E00289F91 /* pv-interview-mobileTests */,
+				297BB0331F05754E00289F91 /* pv-interview-mobileUITests */,
+				297BB0101F05754D00289F91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		297BB0101F05754D00289F91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				297BB00F1F05754D00289F91 /* pv-interview-mobile.app */,
+				297BB0251F05754D00289F91 /* pv-interview-mobileTests.xctest */,
+				297BB0301F05754E00289F91 /* pv-interview-mobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		297BB0111F05754D00289F91 /* pv-interview-mobile */ = {
+			isa = PBXGroup;
+			children = (
+				297BB0121F05754D00289F91 /* AppDelegate.swift */,
+				297BB0141F05754D00289F91 /* MasterViewController.swift */,
+				297BB0161F05754D00289F91 /* DetailViewController.swift */,
+				297BB0181F05754D00289F91 /* Main.storyboard */,
+				297BB01B1F05754D00289F91 /* Assets.xcassets */,
+				297BB01D1F05754D00289F91 /* LaunchScreen.storyboard */,
+				297BB0201F05754D00289F91 /* Info.plist */,
+				297BB0451F0576BD00289F91 /* MovieModel.swift */,
+				29E1A1381F05C17A0056006E /* Constants.swift */,
+				29E1A13A1F05F5B10056006E /* Api.swift */,
+			);
+			path = "pv-interview-mobile";
+			sourceTree = "<group>";
+		};
+		297BB0281F05754E00289F91 /* pv-interview-mobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				297BB02B1F05754E00289F91 /* Info.plist */,
+				297BB0421F0575B600289F91 /* MovieModelTests.swift */,
+				297BB0471F0581E600289F91 /* NetworkTest.swift */,
+				298FAD9F1F05A03900686AEF /* MovieModelTest.swift */,
+			);
+			path = "pv-interview-mobileTests";
+			sourceTree = "<group>";
+		};
+		297BB0331F05754E00289F91 /* pv-interview-mobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				297BB0341F05754E00289F91 /* pv_interview_mobileUITests.swift */,
+				297BB0361F05754E00289F91 /* Info.plist */,
+			);
+			path = "pv-interview-mobileUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		297BB00E1F05754D00289F91 /* pv-interview-mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 297BB0391F05754E00289F91 /* Build configuration list for PBXNativeTarget "pv-interview-mobile" */;
+			buildPhases = (
+				297BB00B1F05754D00289F91 /* Sources */,
+				297BB00C1F05754D00289F91 /* Frameworks */,
+				297BB00D1F05754D00289F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pv-interview-mobile";
+			productName = "pv-interview-mobile";
+			productReference = 297BB00F1F05754D00289F91 /* pv-interview-mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		297BB0241F05754D00289F91 /* pv-interview-mobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 297BB03C1F05754E00289F91 /* Build configuration list for PBXNativeTarget "pv-interview-mobileTests" */;
+			buildPhases = (
+				297BB0211F05754D00289F91 /* Sources */,
+				297BB0221F05754D00289F91 /* Frameworks */,
+				297BB0231F05754D00289F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				297BB0271F05754E00289F91 /* PBXTargetDependency */,
+			);
+			name = "pv-interview-mobileTests";
+			productName = "pv-interview-mobileTests";
+			productReference = 297BB0251F05754D00289F91 /* pv-interview-mobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		297BB02F1F05754E00289F91 /* pv-interview-mobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 297BB03F1F05754E00289F91 /* Build configuration list for PBXNativeTarget "pv-interview-mobileUITests" */;
+			buildPhases = (
+				297BB02C1F05754E00289F91 /* Sources */,
+				297BB02D1F05754E00289F91 /* Frameworks */,
+				297BB02E1F05754E00289F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				297BB0321F05754E00289F91 /* PBXTargetDependency */,
+			);
+			name = "pv-interview-mobileUITests";
+			productName = "pv-interview-mobileUITests";
+			productReference = 297BB0301F05754E00289F91 /* pv-interview-mobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		297BB0071F05754D00289F91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Levi Flippo";
+				TargetAttributes = {
+					297BB00E1F05754D00289F91 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					297BB0241F05754D00289F91 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 297BB00E1F05754D00289F91;
+					};
+					297BB02F1F05754E00289F91 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 297BB00E1F05754D00289F91;
+					};
+				};
+			};
+			buildConfigurationList = 297BB00A1F05754D00289F91 /* Build configuration list for PBXProject "pv-interview-mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 297BB0061F05754D00289F91;
+			productRefGroup = 297BB0101F05754D00289F91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				297BB00E1F05754D00289F91 /* pv-interview-mobile */,
+				297BB0241F05754D00289F91 /* pv-interview-mobileTests */,
+				297BB02F1F05754E00289F91 /* pv-interview-mobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		297BB00D1F05754D00289F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297BB01F1F05754D00289F91 /* LaunchScreen.storyboard in Resources */,
+				297BB01C1F05754D00289F91 /* Assets.xcassets in Resources */,
+				297BB01A1F05754D00289F91 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297BB0231F05754D00289F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297BB02E1F05754E00289F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		297BB00B1F05754D00289F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297BB0171F05754D00289F91 /* DetailViewController.swift in Sources */,
+				29E1A1391F05C17A0056006E /* Constants.swift in Sources */,
+				297BB0461F0576BD00289F91 /* MovieModel.swift in Sources */,
+				297BB0151F05754D00289F91 /* MasterViewController.swift in Sources */,
+				29E1A13B1F05F5B10056006E /* Api.swift in Sources */,
+				297BB0131F05754D00289F91 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297BB0211F05754D00289F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298FADA01F05A03900686AEF /* MovieModelTest.swift in Sources */,
+				297BB0441F0575B600289F91 /* MovieModelTests.swift in Sources */,
+				297BB04B1F0583F300289F91 /* NetworkTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297BB02C1F05754E00289F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297BB0351F05754E00289F91 /* pv_interview_mobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		297BB0271F05754E00289F91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 297BB00E1F05754D00289F91 /* pv-interview-mobile */;
+			targetProxy = 297BB0261F05754E00289F91 /* PBXContainerItemProxy */;
+		};
+		297BB0321F05754E00289F91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 297BB00E1F05754D00289F91 /* pv-interview-mobile */;
+			targetProxy = 297BB0311F05754E00289F91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		297BB0181F05754D00289F91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				297BB0191F05754D00289F91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		297BB01D1F05754D00289F91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				297BB01E1F05754D00289F91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		297BB0371F05754E00289F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		297BB0381F05754E00289F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		297BB03A1F05754E00289F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "pv-interview-mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leviflippo.pv-interview-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		297BB03B1F05754E00289F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "pv-interview-mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leviflippo.pv-interview-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		297BB03D1F05754E00289F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "pv-interview-mobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leviflippo.pv-interview-mobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pv-interview-mobile.app/pv-interview-mobile";
+			};
+			name = Debug;
+		};
+		297BB03E1F05754E00289F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "pv-interview-mobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leviflippo.pv-interview-mobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pv-interview-mobile.app/pv-interview-mobile";
+			};
+			name = Release;
+		};
+		297BB0401F05754E00289F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "pv-interview-mobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leviflippo.pv-interview-mobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "pv-interview-mobile";
+			};
+			name = Debug;
+		};
+		297BB0411F05754E00289F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "pv-interview-mobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leviflippo.pv-interview-mobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "pv-interview-mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		297BB00A1F05754D00289F91 /* Build configuration list for PBXProject "pv-interview-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				297BB0371F05754E00289F91 /* Debug */,
+				297BB0381F05754E00289F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		297BB0391F05754E00289F91 /* Build configuration list for PBXNativeTarget "pv-interview-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				297BB03A1F05754E00289F91 /* Debug */,
+				297BB03B1F05754E00289F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		297BB03C1F05754E00289F91 /* Build configuration list for PBXNativeTarget "pv-interview-mobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				297BB03D1F05754E00289F91 /* Debug */,
+				297BB03E1F05754E00289F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		297BB03F1F05754E00289F91 /* Build configuration list for PBXNativeTarget "pv-interview-mobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				297BB0401F05754E00289F91 /* Debug */,
+				297BB0411F05754E00289F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 297BB0071F05754D00289F91 /* Project object */;
+}
