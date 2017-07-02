@@ -9,7 +9,7 @@
 import UIKit
 
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, APIControllerProtocol {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
@@ -25,30 +25,49 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var budgetLabel: UILabel!
     
+    lazy var api: Api = Api(delegate: self)
     
-    func configureView() {
-        if let description = self.movieDescription {
-            if let label = self.descriptionLabel {
-                //print(description)
-                label.text = description
+    func didReceiveAPIResults(results: NSDictionary?) {
+        
+    }
+    
+    func didReceiveMovie(results: FullMovieModel) {
+        DispatchQueue.main.async {
+            let movie = results
+            self.descriptionLabel.text = movie.overview
+            self.releaseLabel.text = "Release Date: " + movie.release_date!
+            self.companyLabel.text = movie.production
+            
+            self.api.downloadLargeImage(url: movie.backdropPath!) {
+                (data, error) -> Void in
+                    self.movieImageView.image = UIImage(data: data!)
             }
         }
+    }
+    
+    func didReceiveImageResults(results: Data?) {
         
-        if let title = self.movieTitle {
-            print(title)
-            self.title = title
+    }
+
+    func configureView() {
+        if let id = self.movieId {
+            print(id)
         }
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        api.getMovie(movieId: movieId!) {
+            (data, error) -> Void in
+
+        }
         self.configureView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
   
@@ -58,18 +77,25 @@ class DetailViewController: UIViewController {
             self.configureView()
         }
     }
-
-    var movieTitle: String? {
-        didSet {
-            self.configureView()
-        }
-    }
+//
+//    var movieTitle: String? {
+//        didSet {
+//            self.configureView()
+//        }
+//    }
     
     var movieId: Int? {
         didSet {
             self.configureView()
         }
     }
+    
+    var productionCompany: String? {
+        didSet {
+            self.configureView()
+        }
+    }
+    
     
     var detailItem: String?
 }

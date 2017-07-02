@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		296FCA781F0726B300708CDA /* FullMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296FCA771F0726B300708CDA /* FullMovieModel.swift */; };
+		296FCA7C1F08136100708CDA /* ApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296FCA7B1F08136100708CDA /* ApiTest.swift */; };
 		297BB0131F05754D00289F91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0121F05754D00289F91 /* AppDelegate.swift */; };
 		297BB0151F05754D00289F91 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0141F05754D00289F91 /* MasterViewController.swift */; };
 		297BB0171F05754D00289F91 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0161F05754D00289F91 /* DetailViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		296FCA771F0726B300708CDA /* FullMovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullMovieModel.swift; sourceTree = "<group>"; };
+		296FCA7B1F08136100708CDA /* ApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiTest.swift; sourceTree = "<group>"; };
 		297BB00F1F05754D00289F91 /* pv-interview-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pv-interview-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		297BB0121F05754D00289F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		297BB0141F05754D00289F91 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 				297BB0451F0576BD00289F91 /* MovieModel.swift */,
 				29E1A1381F05C17A0056006E /* Constants.swift */,
 				29E1A13A1F05F5B10056006E /* Api.swift */,
+				296FCA771F0726B300708CDA /* FullMovieModel.swift */,
 			);
 			path = "pv-interview-mobile";
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 				297BB0421F0575B600289F91 /* MovieModelTests.swift */,
 				297BB0471F0581E600289F91 /* NetworkTest.swift */,
 				298FAD9F1F05A03900686AEF /* MovieModelTest.swift */,
+				296FCA7B1F08136100708CDA /* ApiTest.swift */,
 			);
 			path = "pv-interview-mobileTests";
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 				297BB0461F0576BD00289F91 /* MovieModel.swift in Sources */,
 				297BB0151F05754D00289F91 /* MasterViewController.swift in Sources */,
 				29E1A13B1F05F5B10056006E /* Api.swift in Sources */,
+				296FCA781F0726B300708CDA /* FullMovieModel.swift in Sources */,
 				297BB0131F05754D00289F91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +299,7 @@
 			files = (
 				298FADA01F05A03900686AEF /* MovieModelTest.swift in Sources */,
 				297BB0441F0575B600289F91 /* MovieModelTests.swift in Sources */,
+				296FCA7C1F08136100708CDA /* ApiTest.swift in Sources */,
 				297BB04B1F0583F300289F91 /* NetworkTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

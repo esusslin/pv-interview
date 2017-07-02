@@ -12,8 +12,9 @@ class MovieTableViewCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    
     @IBOutlet weak var movieImage: UIImageView!
+    @IBOutlet weak var genreLabel: UILabel!
+    @IBOutlet weak var releaseDateLabel: UILabel!
 
 }
 
@@ -21,6 +22,7 @@ class MasterViewController: UITableViewController, APIControllerProtocol {
 
     var detailViewController: DetailViewController? = nil
     var movies = [MovieModel]()
+    var page: Int = 1
     
     lazy var api: Api = Api(delegate: self)
     func didReceiveAPIResults(results: NSDictionary?) {
@@ -29,7 +31,6 @@ class MasterViewController: UITableViewController, APIControllerProtocol {
             for object in jsonMovieArray {
                 let movie = MovieModel(json: object as! [String : Any])
                 if movie != nil {
-                    //print(movie?.title)
                     self.movies.append(movie!)
                 }
             }
@@ -38,15 +39,20 @@ class MasterViewController: UITableViewController, APIControllerProtocol {
         
     }
     
+    func didReceiveMovie(results: FullMovieModel) {
+        
+    }
+    
     func didReceiveImageResults(results: Data?) {
         
     }
-
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        api.getTopRatedMovies(){
+        api.getTopRatedMovies(page: page){
             (data, error) -> Void in
             //any additional processing, other REST calls, etc.
         }
@@ -103,10 +109,28 @@ class MasterViewController: UITableViewController, APIControllerProtocol {
         let movie = movies[indexPath.row]
         cell.titleLabel?.text = movie.title
         cell.descriptionLabel?.text = movie.overview
+        cell.descriptionLabel?.numberOfLines = 0
+        cell.releaseDateLabel?.text = "Release Date: " + movie.release_date!
+       // cell.genreLabel?.text = movie.genre
         api.downloadImage(url: movie.posterPath!) {
             (data, error) -> Void in
-                cell.movieImage.image = UIImage(data: data!)
+            DispatchQueue.main.async {
+                if let updateCell = tableView.cellForRow(at: indexPath) as! MovieTableViewCell?
+                {
+                    updateCell.movieImage?.image = UIImage(data: data!)
+                }
+            }
+            
         }
+        
+        if(tableView.contentOffset.y >= (tableView.contentSize.height - tableView.frame.size.height)) {
+            print("bottom")
+            page = page + 1
+            api.getTopRatedMovies(page: page) {
+                (data, error) -> Void in
+            }
+        }
+    
         return cell
     }
 

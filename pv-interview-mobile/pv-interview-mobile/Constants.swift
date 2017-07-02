@@ -15,10 +15,13 @@ struct Constants {
 
     
     //API endpoint to get array of top rated movies
-    static let top_rated_url = "https://api.themoviedb.org/3/movie/top_rated?api_key=4e5ae41d4d6af54849229c5da8960317"
+    static let top_rated_url = "https://api.themoviedb.org/3/movie/top_rated?api_key=4e5ae41d4d6af54849229c5da8960317&page="
     
     //API for testing getting a single move (Fight Club)
     static let fight_club_url = "https://api.themoviedb.org/3/movie/550?api_key=4e5ae41d4d6af54849229c5da8960317"
+    
+    //API for getting details about movie
+    static let movie_detail_url = "https://api.themoviedb.org/3/movie/"
     
     static let image_base_url = "https://image.tmdb.org/t/p/"
     
