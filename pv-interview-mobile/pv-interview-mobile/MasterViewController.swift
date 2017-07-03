@@ -56,6 +56,7 @@ class MasterViewController: UITableViewController, APIControllerProtocol {
             (data, error) -> Void in
             //any additional processing, other REST calls, etc.
         }
+        self.title = "Top Rated"
         
         // Do any additional setup after loading the view, typically from a nib.
        // self.navigationItem.leftBarButtonItem = self.editButtonItem
@@ -85,6 +86,7 @@ class MasterViewController: UITableViewController, APIControllerProtocol {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let movie = movies[indexPath.row] 
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                controller.title = movie.title
                 controller.movieId = movie.id
                 controller.movieDescription = movie.overview
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
@@ -122,7 +124,7 @@ class MasterViewController: UITableViewController, APIControllerProtocol {
             }
             
         }
-        
+    
         if(tableView.contentOffset.y >= (tableView.contentSize.height - tableView.frame.size.height)) {
             print("bottom")
             page = page + 1

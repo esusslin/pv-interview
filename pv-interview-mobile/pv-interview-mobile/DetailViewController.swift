@@ -37,7 +37,8 @@ class DetailViewController: UIViewController, APIControllerProtocol {
             self.descriptionLabel.text = movie.overview
             self.releaseLabel.text = "Release Date: " + movie.release_date!
             self.companyLabel.text = movie.production
-            
+            self.budgetLabel.text =  "Budget: " + String(describing: movie.budget!)
+            self.generaLabel.text = "Genre: " + movie.genre!
             self.api.downloadLargeImage(url: movie.backdropPath!) {
                 (data, error) -> Void in
                     self.movieImageView.image = UIImage(data: data!)
@@ -77,12 +78,12 @@ class DetailViewController: UIViewController, APIControllerProtocol {
             self.configureView()
         }
     }
-//
-//    var movieTitle: String? {
-//        didSet {
-//            self.configureView()
-//        }
-//    }
+   
+    var budget: Int? {
+        didSet {
+            self.configureView()
+        }
+    }
     
     var movieId: Int? {
         didSet {
@@ -91,6 +92,12 @@ class DetailViewController: UIViewController, APIControllerProtocol {
     }
     
     var productionCompany: String? {
+        didSet {
+            self.configureView()
+        }
+    }
+    
+    var genre: String? {
         didSet {
             self.configureView()
         }

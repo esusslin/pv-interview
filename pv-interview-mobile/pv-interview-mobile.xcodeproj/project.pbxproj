@@ -18,7 +18,6 @@
 		297BB0351F05754E00289F91 /* pv_interview_mobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0341F05754E00289F91 /* pv_interview_mobileUITests.swift */; };
 		297BB0441F0575B600289F91 /* MovieModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0421F0575B600289F91 /* MovieModelTests.swift */; };
 		297BB0461F0576BD00289F91 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0451F0576BD00289F91 /* MovieModel.swift */; };
-		297BB04B1F0583F300289F91 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BB0471F0581E600289F91 /* NetworkTest.swift */; };
 		298FADA01F05A03900686AEF /* MovieModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FAD9F1F05A03900686AEF /* MovieModelTest.swift */; };
 		29E1A1391F05C17A0056006E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E1A1381F05C17A0056006E /* Constants.swift */; };
 		29E1A13B1F05F5B10056006E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E1A13A1F05F5B10056006E /* Api.swift */; };
@@ -59,7 +58,6 @@
 		297BB0361F05754E00289F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		297BB0421F0575B600289F91 /* MovieModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModelTests.swift; sourceTree = "<group>"; };
 		297BB0451F0576BD00289F91 /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
-		297BB0471F0581E600289F91 /* NetworkTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
 		298FAD9F1F05A03900686AEF /* MovieModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModelTest.swift; sourceTree = "<group>"; };
 		29E1A1381F05C17A0056006E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		29E1A13A1F05F5B10056006E /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 			children = (
 				297BB02B1F05754E00289F91 /* Info.plist */,
 				297BB0421F0575B600289F91 /* MovieModelTests.swift */,
-				297BB0471F0581E600289F91 /* NetworkTest.swift */,
 				298FAD9F1F05A03900686AEF /* MovieModelTest.swift */,
 				296FCA7B1F08136100708CDA /* ApiTest.swift */,
 			);
@@ -300,7 +297,6 @@
 				298FADA01F05A03900686AEF /* MovieModelTest.swift in Sources */,
 				297BB0441F0575B600289F91 /* MovieModelTests.swift in Sources */,
 				296FCA7C1F08136100708CDA /* ApiTest.swift in Sources */,
-				297BB04B1F0583F300289F91 /* NetworkTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

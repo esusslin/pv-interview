@@ -14,6 +14,8 @@ class FullMovieModel {
     var posterPath: String?
     var backdropPath: String?
     var production: String?
+    var genre: String?
+    var budget: Int?
     var id: Int?
 
     //optional initializer used to parse json into a movieModel
@@ -23,7 +25,7 @@ class FullMovieModel {
             let overview = json["overview"]  as? String,
             let posterPath = json["poster_path"] as? String,
             let backdropPath = json["backdrop_path"] as? String,
-          //  let production = json["production_companies"] as? [String: Any],
+            let budget = json["budget"] as? Int,
             let id = json["id"] as? Int
         else {
             print("error parsing movie model")
@@ -35,18 +37,22 @@ class FullMovieModel {
         self.overview = overview
         self.posterPath = posterPath
         self.backdropPath = backdropPath
-        //self.production = production
+        self.budget = budget
         self.id = id
         
-        guard let temp = json["production_companies"] as?  [[String: Any]] else {
-            print("bad")
+        guard let companies = json["production_companies"] as?  [[String: Any]] else {
                 return nil
         }
         
-        let production = temp.first?["name"] as? String
+        let production = companies.first?["name"] as? String
         self.production = production
-        //print(production)
         
-      
+        guard let genres = json["genres"] as? [[String: Any]] else {
+            return nil
+        }
+        
+        let genre = genres.first?["name"] as? String
+        self.genre = genre
+
     }
 }
